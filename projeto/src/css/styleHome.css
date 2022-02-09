@@ -1,0 +1,209 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+
+li,
+a,
+button {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  color: #edf0f1;
+  text-decoration: none;
+}
+
+html
+
+textarea {
+  padding: 10px;
+  resize: vertical;
+  display: block;
+  border-radius: 20px;
+  margin: 10px auto;
+  max-width: 200%;
+  width: 100%;
+  height: 120px;
+  resize: none;
+  border-color: #0088a9;
+}
+
+header {
+  display: flex;
+  background: rgba(0, 0, 0, 0.2);
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 15%;
+  position: absolute;
+  top: 0;
+  transition: top 0.5s;
+}
+
+footer {
+  bottom: 0;
+  position: fixed;
+  transition: bottom 0.5s;
+}
+
+.footerTexto {
+  color: black;
+}
+
+.logo {
+  cursor: pointer;
+}
+
+.nav__links {
+  list-style: none;
+}
+
+.nav__links li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.nav__links li a {
+  transition: all 0.3s ease 0s;
+}
+
+.nav__links li a:hover {
+  color: #0088a9;
+}
+
+button {
+  margin-left: 20px;
+  padding: 9px 25px;
+  background-color: rgba(0, 136, 169, 1);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+button:hover {
+  background-color: rgb(11, 107, 131);
+}
+
+#btnLogin {
+  background-color: #edf0f1;
+  color: rgba(0, 136, 169, 1);
+}
+
+#btnLogin:hover {
+  background-color: lightgray;
+}
+
+body {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background: linear-gradient(135deg, rgba(0, 136, 169, 1), #edf0f1);
+}
+
+
+.container .title::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 100%;
+  background: linear-gradient(135deg, rgba(0, 136, 169, 1), #edf0f1);
+}
+
+#termoUso {
+  text-align: center;
+}
+
+#termoUso a {
+  margin-right: 1px;
+  color: darkblue;
+}
+
+#termoUso input {
+  transform: scale(1.3);
+}
+
+#termoUso label a:hover {
+  text-decoration: underline;
+}
+
+
+.template {
+  display: none;
+}
+
+@media (max-width: 991px) {
+  header {
+    padding: 10px 20px;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 650px) {
+  .container {
+    max-width: 100%;
+  }
+  form .user-details .input-box {
+    margin-bottom: 15px;
+    width: 100%;
+  }
+  .container form .user-details {
+    max-height: 300px;
+    overflow-y: scroll;
+  }
+  .user-details::-webkit-scrollbar {
+    width: 0;
+  }
+  header nav {
+    display: none;
+  }
+}
+
+div.container {
+  background: -webkit-linear-gradient(top, #088fad 20%, #00d5ff 100%);
+}
+
+.containerHome {
+  width: 80%;
+  margin-left: 5%;
+  margin-bottom: 10%;
+}
+
+div.mainHome {
+  position: absolute;
+  top: 30%;
+}
+
+div.mainHome h1 {
+  font-family: Verdana, sans-serif;
+  font-size: 30px;
+  max-width: 600px;
+  text-align: justify;
+}
+
+div.mainHome p {
+  margin:20px 0;
+  color: black;
+  max-width: 550px;
+  text-align: left;
+  font-family: Verdana, sans-serif;
+  font-weight: bolder;
+  font-size: 16px;
+}
+
+div.mainHome button {
+  margin-left: 0px;
+  margin-top: 10px;
+  padding: 11px 33px;
+}
+
+section img{
+  width:70%;
+  height: auto;
+  align-items: right;
+  position: absolute;
+  left: 30%;
+  top: 30%;
+}
+

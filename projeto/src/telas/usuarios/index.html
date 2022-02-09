@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/styleHome" />
+    <link rel="stylesheet" href="/css/styleMenuLogado" />
+    <title>Foco Total</title>
+  </head>
+
+  <body style="height: 105vh">
+
+    <header id="headerComControle">
+      <img class="logo" src="/img/logo" alt="logo" style="width: 10%" />
+      <nav>
+        <ul class="nav__links">
+          <li><a href="/">Página Inicial</a></li>
+          <li><a href="/minhasTarefas">Minhas Tarefas</a></li>
+          <li><a href="/faleConosco">Fale Conosco</a></li>
+          <li><a href="#">Notificações</a></li>
+        </ul>
+      </nav>
+      <a class="cta">
+        <button id="btnLogin" onclick="window.location.href='/login'">
+          Login
+        </button>
+        <button id="btnCadastro" onclick="window.location.href='/cadastrar'">
+          Cadastrar-se
+        </button>
+
+      </a>
+    </header>
+
+    <div class="action" disabled hidden>
+      <div class="profile" onclick="menuToggle();">
+        <!-- div aqui -->
+        <img src="/img/defaultUserProfile">
+      </div>
+      <div class="menu">
+        <h3>Nome<br><span>Usuário</span></h3>
+        <ul>
+          <li><img src="/img/editData"><a href="/editarUsuario">Editar Perfil</a></li>
+          <li><img src="/img/question"><a href="/faleConosco">Ajuda</a></li>
+          <li><img src="/img/userLogOut"><a href="/js/deslogarUsuario">Sair</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="containerHome">
+      <section>
+        <img src="/img/homeImage" />
+      </section>
+      <div class="mainHome">
+        <h1>
+          Utilize nossas ferramentas e<br />realize mais com
+          <span style="color: rgba(0, 136, 169, 1)">FOCO TOTAL</span>
+        </h1>
+        <p>
+          Planejamento e organização são essenciais para executar suas tarefas com
+          sucesso. Agende, receba lembretes e mantenha seus planos em ordem.
+        </p>
+
+        <button onclick="window.location.href='/cadastrar'">
+          Comece já!
+        </button>
+      </div>
+    </div>
+  </body>
+  <script src="/js/verificarLogado"></script>
+  <!-- <script src="../../js/outros/controleHeader.js"></script> -->
+
+</html>
